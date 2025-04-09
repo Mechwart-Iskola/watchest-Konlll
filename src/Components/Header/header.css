@@ -10,6 +10,10 @@
     transition: .4s;
 }
 
+.nav__item{
+    list-style: none;
+}
+
 nav {
     height: var(--header-height);
     display: flex;

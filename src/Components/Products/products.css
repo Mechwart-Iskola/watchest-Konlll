@@ -5,7 +5,11 @@
     margin-right: var(--mb-1-5);
 }
 
-.products__container {}
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
 
 @media screen and (max-width: 320px) {
     .products__container {
@@ -20,9 +24,9 @@
     }
 
     .products__container {
-
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
-
+        gap: 3rem;
     }
 
     .products__card {
@@ -42,6 +46,7 @@
     }
 
     .products__container {
+        grid-template-columns: repeat(4, 1fr);
         padding-top: 2rem;
     }
 }
